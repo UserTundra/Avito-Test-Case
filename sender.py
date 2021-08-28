@@ -3,5 +3,8 @@ class Sender:
         self.client = client
 
     def send(self, channels):
+        result = []
         for message in channels:
-            self.client.chat_postMessage(channel=message['channel'], text=message['text'])
+            #self.client.chat_postMessage(channel=message['channel'], text=message['text'])
+            result.append(self.client.chat_postMessage(channel=message['channel'], text=message['text']))
+        return result

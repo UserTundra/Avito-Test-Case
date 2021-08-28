@@ -5,7 +5,7 @@ from unittest.mock import MagicMock
 from sender import Sender
 
 
-class MyTestCase(unittest.TestCase):
+class SenderTestCase(unittest.TestCase):
     def test_sender_positive(self):
         channels = [
             {
